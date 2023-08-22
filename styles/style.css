@@ -86,3 +86,6 @@ nav ul li a:hover::after{
     color: blue;
     background-color: #ff004f;
 }
+.service-card{
+    background-color: #ff004f;
+}
