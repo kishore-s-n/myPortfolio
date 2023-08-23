@@ -10,6 +10,7 @@
     background-color: black;
     background-size: cover;
     height:100%;
+    border-bottom: 2px solid #ff004f;
 }
  
 .logo h1 span{
@@ -60,6 +61,7 @@ nav ul li a:hover::after{
 }
 .about-col-1{
     flex-basis: 40%;
+    border-right: 2px solid #ff004f;
 }
 
 .about-col-1 h1 span{
