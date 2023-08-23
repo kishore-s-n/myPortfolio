@@ -6,9 +6,8 @@
 }
 
 #header{
-    background-image: url(/images/background.png);
+    background-color: black;
     background-size: cover;
-    background-position: center;
 }
  
 .logo h1 span{
