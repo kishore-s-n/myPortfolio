@@ -95,9 +95,12 @@ nav ul li a:hover::after{
     background-color: #ff004f;
 }
 .service-card{
-    background-color: #ff004f;
+    background-color: #36454F;
     height: 350px;
     overflow-y: scroll;
+}
+.service-card h1{
+  background-color: #ff004f; 
 }
 
 #service{
