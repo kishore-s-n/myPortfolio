@@ -58,11 +58,11 @@ nav ul li a:hover::after{
     height:100%;
 }
 .about-col-1{
-    flex-basis: 35%;
+    flex-basis: 40%;
 }
 
 .about-col-2{
-    flex-basis: 60%;
+    flex-basis: 50%;
 }
 
 .tab-contents ul li span{
