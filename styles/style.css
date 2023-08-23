@@ -69,7 +69,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-2{
-    flex-basis: 45%;
+    flex-basis: 40%;
 }
 
 .tab-contents ul li span{
