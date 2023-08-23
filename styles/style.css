@@ -60,7 +60,7 @@ nav ul li a:hover::after{
     height:100%;
 }
 .about-col-1{
-    flex-basis: 40%;
+    flex-basis: 45%;
     border-right: 2px solid #ff004f;
 }
 
@@ -69,7 +69,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-2{
-    flex-basis: 50%;
+    flex-basis: 45%;
 }
 
 .tab-contents ul li span{
@@ -96,7 +96,7 @@ nav ul li a:hover::after{
 }
 .service-card{
     background-color: #ff004f;
-    height: 500px;
+    height: 400px;
     overflow-y: none;
 }
 
