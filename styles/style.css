@@ -97,7 +97,7 @@ nav ul li a:hover::after{
 .service-card{
     background-color: #ff004f;
     height: 400px;
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 
 #service{
