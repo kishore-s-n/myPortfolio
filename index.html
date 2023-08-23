@@ -79,25 +79,62 @@
   </div>
 
   <div id="services">
-    <h1 class="text-6xl font-semibold text-white text-center pb-10">My Services</h1>
+    <h1 class="text-6xl font-semibold text-white text-center mt-10 pb-10">My Services</h1>
     <div class="services-list flex relative">
-      <div onmousemove="changeCard(this,'front')" id="front" class="web-dev service-card basis-1/4 m-10 flex flex-col">
-        <div class="service-card-heading">
-          <h1 class="text-black font-extrabold text-2xl font-mono p-4 text-center justify-center">Front End Development</h1>
+      <div class="card">
+        <div onmousemove="changeCard('frontFront','frontBack')" id="front" class=" card-inner service-card basis-1/4 m-10 flex flex-col">
+          <div id="frontFront" class="card-front">
+            <div class="service-card-heading">
+              <h1 class="text-black font-extrabold text-2xl font-mono p-4 text-center justify-center">
+                Front End Development
+              </h1>
+            </div>
+          </div>
+          <div id="frontBack" class="card-back">
+            <div class="service-card-heading">
+              <h1 class="text-black font-extrabold text-2xl font-mono p-4 text-center justify-center">
+                Front End Development
+              </h1>
+            </div>
+            <p>I'm a passionate web developer with a knack for turning ideas into interactive online experiences. Armed with a strong coding arsenal and a creative mindset, I thrive on building user-friendly websites that captivate and inspire. My mission is to craft elegant solutions, from responsive designs to seamless functionality, all while staying on the cutting edge of web technologies. Let's collaborate and bring your digital dreams to life!</p>
+          </div>
         </div>
-        <p>I'm a passionate web developer with a knack for turning ideas into interactive online experiences. Armed with a strong coding arsenal and a creative mindset, I thrive on building user-friendly websites that captivate and inspire. My mission is to craft elegant solutions, from responsive designs to seamless functionality, all while staying on the cutting edge of web technologies. Let's collaborate and bring your digital dreams to life!</p>
       </div>
-      <div onmousemove="changeCard(this,'back')" id="back" class="web-dev service-card basis-1/4 m-10 flex flex-col">
-        <div class="service-card-heading">
-          <h1 class="text-black font-extrabold text-2xl font-mono p-4 text-center justify-center">Back End Development</h1>    
+      <div class="card">
+        <div onmousemove="changeCard('backFront','backBack')" id="back" class=" card-inner service-card basis-1/4 m-10 flex flex-col">
+          <div id="backFront" class="card-front">
+            <div class="service-card-heading">
+              <h1 class="text-black font-extrabold text-2xl font-mono p-4 text-center justify-center">
+                Back End Development
+              </h1>
+            </div>
+          </div>
+          <div id="backBack" class="card-back">
+            <div class="service-card-heading">
+              <h1 class="text-black font-extrabold text-2xl font-mono p-4 text-center justify-center">
+                Back End Development
+              </h1>    
+            </div>
+            <p>I'm a passionate web developer with a knack for turning ideas into interactive online experiences. Armed with a strong coding arsenal and a creative mindset, I thrive on building user-friendly websites that captivate and inspire. My mission is to craft elegant solutions, from responsive designs to seamless functionality, all while staying on the cutting edge of web technologies. Let's collaborate and bring your digital dreams to life!</p>
+          </div>
         </div>
-        <p>I'm a passionate web developer with a knack for turning ideas into interactive online experiences. Armed with a strong coding arsenal and a creative mindset, I thrive on building user-friendly websites that captivate and inspire. My mission is to craft elegant solutions, from responsive designs to seamless functionality, all while staying on the cutting edge of web technologies. Let's collaborate and bring your digital dreams to life!</p>
       </div>
-      <div onmousemove="changeCard(this,'design')" id="design" class="web-dev service-card basis-1/4 m-10 flex flex-col">
-        <div class="service-card-heading">
-          <h1 class="text-black font-extrabold text-2xl font-mono p-4 text-center justify-center">Web Development</h1>
+      <div class="card">
+        <div onmousemove="changeCard('designFront','designBack')" id="design" class=" card-inner service-card basis-1/4 m-10 flex flex-col">
+          <div id="designFront" class="card-front">
+            <div class="service-card-heading">
+              <h1 class="text-black font-extrabold text-2xl font-mono p-4 text-center justify-center">
+                Web Designing
+              </h1>
+            </div>
+          </div>
+          <div id="designBack" class="card-back">
+            <div class="service-card-heading">
+              <h1 class="text-black font-extrabold text-2xl font-mono p-4 text-center justify-center">Web Development</h1>
+            </div>
+            <p class="p-7">I'm a passionate web developer with a knack for turning ideas into interactive online experiences. Armed with a strong coding arsenal and a creative mindset, I thrive on building user-friendly websites that captivate and inspire. My mission is to craft elegant solutions, from responsive designs to seamless functionality, all while staying on the cutting edge of web technologies. Let's collaborate and bring your digital dreams to life!</p>
+          </div>
         </div>
-        <p class="p-7">I'm a passionate web developer with a knack for turning ideas into interactive online experiences. Armed with a strong coding arsenal and a creative mindset, I thrive on building user-friendly websites that captivate and inspire. My mission is to craft elegant solutions, from responsive designs to seamless functionality, all while staying on the cutting edge of web technologies. Let's collaborate and bring your digital dreams to life!</p>
       </div>
        
     </div>
@@ -106,6 +143,14 @@
 
 
   <script>
+    function changeCard(cardFront,cardBack) {
+      const card_front=document.getElementById(cardFront);
+      card_front.style.display(none);
+
+      const card__back = document.getElementById(cardBack);
+      card__back.style.display(block);
+      
+    }
     function setActiveTab(tab,contentId) {
 
       const tabLinks = document.querySelectorAll('.tab-link');
