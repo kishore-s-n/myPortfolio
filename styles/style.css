@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 #header{
     background-color: black;
     background-size: cover;
@@ -61,6 +62,10 @@ nav ul li a:hover::after{
     flex-basis: 40%;
 }
 
+.about-col-1 h1 span{
+  color: #ff004f;
+}
+
 .about-col-2{
     flex-basis: 50%;
 }
@@ -89,6 +94,8 @@ nav ul li a:hover::after{
 }
 .service-card{
     background-color: #ff004f;
+    height: 100px;
+    overflow-y: none;
 }
 
 #service{
