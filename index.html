@@ -23,7 +23,7 @@
         </ul>
     </nav>
     <div class="container mb-60">
-        <div class="header-text mt-72 text-center align-center">
+        <div class="header-text mt-72 text-center pl-52">
           <p class="font-light">Web Developer, Frontend Developer</p>
           <h1 class="mt-5 text-6xl">Hi, I'm <span class="font-extrabold">Kishore</span> <br> from Tamil Nadu,India</h1>
         </div>
@@ -81,17 +81,23 @@
   <div id="services">
     <h1 class="text-6xl font-semibold text-white text-center pb-10">My Services</h1>
     <div class="services-list flex relative">
-      <div class="web-dev service-card basis-1/4 m-10 p-10 rotate-180">
-        <h1 class="text-black font-extrabold text-2xl font-mono pb-4 absolute">Front End Development</h1>
+      <div onmousemove="changeCard(this,'front')" id="front" class="web-dev service-card basis-1/4 m-10 flex flex-col">
+        <div class="service-card-heading">
+          <h1 class="text-black font-extrabold text-2xl font-mono p-4 text-center justify-center">Front End Development</h1>
+        </div>
         <p>I'm a passionate web developer with a knack for turning ideas into interactive online experiences. Armed with a strong coding arsenal and a creative mindset, I thrive on building user-friendly websites that captivate and inspire. My mission is to craft elegant solutions, from responsive designs to seamless functionality, all while staying on the cutting edge of web technologies. Let's collaborate and bring your digital dreams to life!</p>
       </div>
-      <div class="web-dev service-card basis-1/4 m-10 p-10">
-        <h1 class="text-black font-extrabold text-2xl font-mono pb-4 absolute">Back End Development</h1>
+      <div onmousemove="changeCard(this,'back')" id="back" class="web-dev service-card basis-1/4 m-10 flex flex-col">
+        <div class="service-card-heading">
+          <h1 class="text-black font-extrabold text-2xl font-mono p-4 text-center justify-center">Back End Development</h1>    
+        </div>
         <p>I'm a passionate web developer with a knack for turning ideas into interactive online experiences. Armed with a strong coding arsenal and a creative mindset, I thrive on building user-friendly websites that captivate and inspire. My mission is to craft elegant solutions, from responsive designs to seamless functionality, all while staying on the cutting edge of web technologies. Let's collaborate and bring your digital dreams to life!</p>
       </div>
-      <div class="web-dev service-card basis-1/4 m-10 p-10">
-        <h1 class="text-black font-extrabold text-2xl font-mono pb-4 absolute">Web Development</h1>
-        <p>I'm a passionate web developer with a knack for turning ideas into interactive online experiences. Armed with a strong coding arsenal and a creative mindset, I thrive on building user-friendly websites that captivate and inspire. My mission is to craft elegant solutions, from responsive designs to seamless functionality, all while staying on the cutting edge of web technologies. Let's collaborate and bring your digital dreams to life!</p>
+      <div onmousemove="changeCard(this,'design')" id="design" class="web-dev service-card basis-1/4 m-10 flex flex-col">
+        <div class="service-card-heading">
+          <h1 class="text-black font-extrabold text-2xl font-mono p-4 text-center justify-center">Web Development</h1>
+        </div>
+        <p class="p-7">I'm a passionate web developer with a knack for turning ideas into interactive online experiences. Armed with a strong coding arsenal and a creative mindset, I thrive on building user-friendly websites that captivate and inspire. My mission is to craft elegant solutions, from responsive designs to seamless functionality, all while staying on the cutting edge of web technologies. Let's collaborate and bring your digital dreams to life!</p>
       </div>
        
     </div>
