@@ -96,7 +96,7 @@ nav ul li a:hover::after{
 }
 
 #service{
-  height:100vh
+  height:100vh;
 }
 
 
@@ -126,6 +126,7 @@ nav ul li a:hover::after{
     position: absolute;
     backface-visibility: hidden;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
