@@ -95,10 +95,13 @@ nav ul li a:hover::after{
     background-color: #ff004f;
 }
 
-#service{
+#services{
   height:100vh;
+  border-top: 2px solid #ff004f;
 }
-
+#services h1:first-child{
+  color: #ff004f;
+}
 
 .card {
     height: 350px;
@@ -131,6 +134,10 @@ nav ul li a:hover::after{
     border: 1px solid white;
 }
 
+.card-front{
+    justify-content: center;
+    align-content: center;
+}
 
 .card-back {
     background-color: black;
