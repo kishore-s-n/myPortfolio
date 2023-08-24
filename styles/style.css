@@ -101,7 +101,7 @@ nav ul li a:hover::after{
 
 
 .card {
-    height: 300px;
+    height: 35%;
     width: 30%;
     perspective: 1000px;
     margin: 10px;
@@ -128,7 +128,6 @@ nav ul li a:hover::after{
     backface-visibility: hidden;
     display: flex;
     flex-direction: column;
-    flex-basis: 30%;
 }
 
 .card-front {
