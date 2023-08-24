@@ -127,6 +127,7 @@ nav ul li a:hover::after{
     backface-visibility: hidden;
     display: flex;
     flex-direction: column;
+    flex-basis: 30%;
 }
 
 .card-front {
