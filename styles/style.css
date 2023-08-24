@@ -126,7 +126,7 @@ nav ul li a:hover::after{
     position: absolute;
     backface-visibility: hidden;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
