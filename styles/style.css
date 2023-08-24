@@ -99,7 +99,7 @@ nav ul li a:hover::after{
   height:100vh;
   border-top: 2px solid #ff004f;
 }
-#services h1:first-child{
+.service-head{
   color: #ff004f;
 }
 
