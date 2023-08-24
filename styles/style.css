@@ -107,8 +107,7 @@ nav ul li a:hover::after{
     width: 30%;
     perspective: 1000px;
     margin: 10px;
-    float: left;
-    direction: flex;
+    display:flex;
 }
 
 .card-inner {
