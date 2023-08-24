@@ -131,13 +131,9 @@ nav ul li a:hover::after{
     border: 1px solid white;
 }
 
-.card-front {
-    background-color: #61677A;
-    color: white;
-}
 
 .card-back {
-    background-color: #e74c3c;
+    background-color: black;
     color: white;
     transform: rotateY(180deg);
 }
