@@ -17,7 +17,7 @@
         <ul class="flex justify-end mr-8">
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
@@ -31,11 +31,11 @@
   </div>
 
   <!-- ---------------about-------------------------------------------------------------------------------- --> 
-  <div id="about" class="h-screen text-white">
+  <section id="about" class="h-screen text-white ">
     <div class="container">
-      <div class="row flex justify-between flex-wrap">
+      <div class="row flex justify-between flex-wrap py-10">
         <div class="about-col-1 pr-10 pl-10">
-            <h1 class="sub-title text-6xl mr-10 font-semibold text-white">About <span>Me</span></h1>
+            <h1 class="sub-title text-6xl mr-10 font-semibold text-white ">About <span>Me</span></h1>
             <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora adipisci, blanditiis beatae ex a impedit molestias pariatur voluptatum. Minus saepe aperiam in vel eos. Eveniet laboriosam ducimus illo atque tempore.</p>
         </div>
         <div class="about-col-2 pr-10">
@@ -76,81 +76,41 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div id="services">
-    <h1 class="text-6xl service-head font-semibold text-white text-center mt-10 pb-10">My Services</h1>
+  <section id="services">
+    <h1 class="text-6xl service-head font-semibold text-white text-center mt-10 py-20"><span>My</span> Services</h1>
     <div class="services-list flex flex-row">
-      <div class="card">
-        <div id="front" class=" card-inner service-card basis-1/4 m-10">
-          <div id="frontFront" class="card-front bg-white text-black">
-            <div class="service-card-heading">
-              <h1 class="text-black font-extrabold text-2xl font-mono p-4 text-center justify-center">
-                Front End Development
-              </h1>
-            </div>
+        <div class="service-card">
+          <div class="card">
+            <h1 class="text-3xl text-center py-5 text-black font-bold">Front End Development</h1>
+            
           </div>
-          <div id="frontBack" class="card-back">
-            <div class="service-card-heading">
-              <h1 class="text-black font-extrabold text-2xl font-mono p-4 text-center">
-                Front End Development
-              </h1>
-            </div>
-            <div><p class="p-7">I'm a passionate web developer with a knack for turning ideas into interactive online experiences. Armed with a strong coding arsenal and a creative mindset, I thrive on building user-friendly websites that captivate and inspire. My mission is to craft elegant solutions, from responsive designs to seamless functionality, all while staying on the cutting edge of web technologies. Let's collaborate and bring your digital dreams to life!</p></div>
+          
+        </div>
+        <div class="service-card">
+          <div class="card">
+            <h1 class="text-3xl text-center py-5 text-black font-bold">Back End Development</h1>
+          </div>
+          <div class="card-content">
+            
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div id="back" class=" card-inner service-card m-10">
-          <div id="backFront" class="card-front bg-white text-black">
-            <div class="service-card-heading">
-              <h1 class="text-black font-extrabold text-2xl font-mono p-4 text-center justify-center">
-                Back End Development
-              </h1>
-            </div>
+        <div class="service-card">
+          <div class="card">
+            <h1 class="text-3xl text-center py-5 text-black font-bold">Web Designing</h1>
           </div>
-          <div id="backBack" class="card-back">
-            <div class="service-card-heading">
-              <h1 class="text-black font-extrabold text-2xl font-mono p-4 text-center justify-center">
-                Back End Development
-              </h1>    
-            </div>
-            <div><p class="p-7">I'm a passionate web developer with a knack for turning ideas into interactive online experiences. Armed with a strong coding arsenal and a creative mindset, I thrive on building user-friendly websites that captivate and inspire. My mission is to craft elegant solutions, from responsive designs to seamless functionality, all while staying on the cutting edge of web technologies. Let's collaborate and bring your digital dreams to life!</p></div>
+          <div class="card-content">
+            
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class=" card-inner service-card m-10">
-          <div id="designFront" class="card-front bg-white text-black">
-            <div class="service-card-heading">
-              <h1 class="text-black font-extrabold text-2xl font-mono p-4 text-center justify-center">
-                Web Designing
-              </h1>
-            </div>
-          </div>
-          <div id="designBack" class="card-back">
-            <div class="service-card-heading">
-              <h1 class="text-black font-extrabold text-2xl font-mono p-4 text-center justify-center">Web Development</h1>
-            </div>
-            <div><p class="p-7">I'm a passionate web developer with a knack for turning ideas into interactive online experiences. Armed with a strong coding arsenal and a creative mindset, I thrive on building user-friendly websites that captivate and inspire. My mission is to craft elegant solutions, from responsive designs to seamless functionality, all while staying on the cutting edge of web technologies. Let's collaborate and bring your digital dreams to life!</p></div>
-          </div>
-        </div>
-      </div>
-       
     </div>
-  </div>
+  </section>
 
 
 
   <script>
-    function changeCard(cardFront,cardBack) {
-      const card_front=document.getElementById(cardFront);
-      card_front.style.display(none);
-
-      const card__back = document.getElementById(cardBack);
-      card__back.style.display(block);
-      
-    }
+    
     function setActiveTab(tab,contentId) {
 
       const tabLinks = document.querySelectorAll('.tab-link');
