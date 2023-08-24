@@ -101,7 +101,7 @@ nav ul li a:hover::after{
 
 
 .card {
-    height: 35%;
+    height: 350px;
     width: 30%;
     perspective: 1000px;
     margin: 10px;
@@ -128,10 +128,11 @@ nav ul li a:hover::after{
     backface-visibility: hidden;
     display: flex;
     flex-direction: column;
+    border: 1px solid white;
 }
 
 .card-front {
-    background-color: #3498db;
+    background-color: #61677A;
     color: white;
 }
 
