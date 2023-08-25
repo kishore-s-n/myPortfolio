@@ -89,10 +89,7 @@ nav ul li a:hover::after{
     padding: 8px;
     border-radius: 10px;
 }
-.random{
-    color: blue;
-    background-color: #ff004f;
-}
+
 
 #services{
   height:100vh;
@@ -108,7 +105,9 @@ nav ul li a:hover::after{
 .services-list{
     justify-content: space-around;
 }
-
+.service-card{
+  flex-basis: 30%;
+}
 .card{
     height: 400px;
     width: 400px;
