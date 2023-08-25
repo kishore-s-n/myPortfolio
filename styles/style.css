@@ -104,6 +104,7 @@ nav ul li a:hover::after{
 
 .services-list{
     justify-content: space-around;
+    gap: 10px;
 }
 .service-card{
   flex-basis: 30%;
