@@ -12,7 +12,9 @@
     height:100%;
     border-bottom: 2px solid #ff004f;
 }
- 
+.header-text{
+  font-size: 60px;
+}
 .logo h1 span{
     color: #ff004f;
     padding: 2px;
@@ -46,6 +48,11 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+.header-text{
+  margin-top: 250px;
+  padding-left: 200px;
+}
+
 .header-text h1 span{
     color: #ff004f;
     font-weight: bolder;
@@ -72,6 +79,7 @@ nav ul li a:hover::after{
 .about-col-1{
     flex-basis: 45%;
     border-right: 2px solid #ff004f;
+    padding-right: 30px;
 }
 
 .about-col-1 h1 span{
@@ -115,11 +123,11 @@ nav ul li a:hover::after{
 
 .services-list{
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
 }
 .service-card{
     height: 300px;
-    flex-basis: 30%;
+    width: 450px;
     background-color: #ff004f;
     overflow-y: hidden;
 }
@@ -127,9 +135,7 @@ nav ul li a:hover::after{
 .service-card:hover{
     height: 300px;
     transition: 0.8s;
-    z-index: 1;
     overflow-y: hidden;
-    flex-basis: 30%;
 }
 .service-card h1{
     text-align: center;
@@ -217,3 +223,131 @@ nav ul li a:hover::after{
 
 
 /* --------------media-queries------------- */
+/* Media Queries */
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  /* Adjust font sizes */
+  .header-text{
+    padding: 5px;
+    font-size: medium;
+  } 
+  .header-text h1{
+    font-size: 40px;
+    text-align: center;
+  }
+  .header-text p{
+    font-size: small;
+  }
+
+  .about-col-1 h1{
+    font-size: 50px;
+  }
+
+  .about-col-1{
+    padding-bottom: 40px;
+  }
+
+  .header-text h1 {
+    font-size: 40px;
+  }
+
+  .tab-link {
+    font-size: 18px;
+  }
+
+  /* Remove border for about-col-1 */
+  .about-col-1 {
+    border-right: none;
+  }
+
+  /* Update service cards for columns and hover effects */
+  .services-list {
+    flex-direction: column;
+  }
+
+  .service-card {
+    height: 400px; /* Initially, set height to auto */
+    width: 90%;
+    overflow-y: hidden;
+    margin: 10px auto;
+    transition: 0.8s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px; /* Add padding to create space for headings */
+  }
+
+  /* Maintain hover effects */
+  .service-card:hover {
+    height: auto; /* Set the hover height as before */
+    width: 90%;
+    margin: 10px auto;
+    transition: 0.8s;
+    padding: 10px; /* Reduce padding on hover to show more content */
+  }
+
+  /* Reduce portfolio item size */
+  .portfolio {
+    height: 300px;
+    width: 350px;
+  }
+
+  /* Adjust section heights */
+  #header,
+  #about,
+  #services,
+  #portfolio {
+    height: auto;
+  }
+}
+
+@media (min-width: 425px) and (max-width:768px) {
+  .service-card{
+    height: 300px;
+  }
+}
+
+/* Tablet devices */
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* Adjust navigation contents and logo ratio */
+  nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    width: auto;
+    background-color: transparent;
+  }
+  .header-text{
+    padding: 20px;
+  }
+  nav ul li {
+    margin: 0 20px;
+  }
+
+  .logo {
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+
+  .logo h1 {
+    font-size: 24px;
+  }
+
+  .service-card{
+    height: 300px;
+    flex-basis: 40%;
+    overflow-y: hidden;
+  }
+
+  #header,
+  #about,
+  #services,
+  #portfolio {
+    height: auto;
+  }
+}
+
