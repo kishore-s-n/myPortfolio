@@ -14,7 +14,9 @@ nav ul{
   cursor: pointer;
   margin-right: 20px;
 }
-
+.header-text p{
+  font-size: 20px;
+}
 .bar {
   width: 25px;
   height: 3px;
@@ -377,6 +379,11 @@ nav ul li a:hover::after{
   .header-text{
     padding: 20px;
   }
+
+  .header-text p{
+    font-size: 20px;
+  }
+
   nav ul li {
     margin: 0 20px;
   }
