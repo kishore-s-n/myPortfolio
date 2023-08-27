@@ -10,18 +10,27 @@
   </head>
 <body class="bg-black text-white">
   <div id="header" class="w-full h-screen">
+   
     <nav class="fixed w-full flex justify-between items-center bg-black">
+      
+      
+  
         <div class="logo">
            <a href="#header"><h1 class="text-4xl p-4"><span>K</span>ishore.</h1></a>
         </div>  
-        <ul class="flex justify-end mr-8">
+        <div class="menu-icon" id="menu-icon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul>
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-    </nav>
+      </nav>
     <div class="container mb-60">
         <div class="header-text text-center">
           <p class="font-light">Web Developer, Frontend Developer</p>
@@ -127,7 +136,13 @@
   </section>
   
   <script>
-    
+    // Add this script to toggle the menu icon and navigation on click
+    document.getElementById("menu-icon").addEventListener("click", function () {
+      const nav = document.querySelector("nav");
+      nav.classList.toggle("active");
+      this.classList.toggle("menu-open");
+    });
+
     function setActiveTab(tab,contentId) {
 
       const tabLinks = document.querySelectorAll('.tab-link');

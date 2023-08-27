@@ -4,7 +4,24 @@
     font-family: sans-serif,'Poppins';
     box-sizing: border-box;
 }
+nav ul{
+  display: flex;
+  justify-content: end;
+  margin-right: 32px;
+}
+.menu-icon {
+  display: none; /* Hide the menu icon initially on larger devices */
+  cursor: pointer;
+  margin-right: 20px;
+}
 
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px auto;
+  transition: 0.4s;
+}
 
 #header{
     background-color: black;
@@ -224,9 +241,46 @@ nav ul li a:hover::after{
 
 /* --------------media-queries------------- */
 /* Media Queries */
-
+/* Add these styles for the menu icon and mobile navigation */
 /* Mobile devices */
 @media (max-width: 768px) {
+  nav ul{
+    /* ... (existing styles) */
+    display: none; /* Hide the nav links initially */
+  }
+
+  .menu-icon {
+    display: block; /* Show the menu icon on mobile devices */
+  }
+
+  /* Add animation for the menu icon bars on open/close */
+  .menu-open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    transition: 0.5s;
+  }
+  
+  .menu-open .bar:nth-child(2) {
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .menu-open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+    transition: 0.5s;
+  }
+
+  /* Show the navigation links when the menu is open */
+  nav.active ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    
+  }
+
+
+
   /* Adjust font sizes */
   .header-text{
     padding: 5px;
